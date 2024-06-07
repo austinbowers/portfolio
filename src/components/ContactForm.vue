@@ -18,8 +18,7 @@
                         <textarea rows="6" v-model="message" id="message" placeholder="Enter your message..." class="shadow-sm dark:bg-opacity-50 outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500 dark:shadow-sm-light"></textarea>
                     </div>
                     <div className="formcarry-block flex justify-center">
-                        <!-- <button :disabled="message.length <= 0" type="submit" class="min-w-[10rem] py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-emerald-700 sm:w-fit hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800" :class="[message.length <= 0 ? 'bg-slate-500' : '']">Send</button> -->
-                        <button type="submit"
+                        <button type="submit" :class="(name && email && message) ? '' : 'cursor-not-allowed'" :disabled="!name && !email && !message"
                         class="text-white rounded-full py-2 bg-transparent px-6 transition duration-500 hover:shadow-lg hover:shadow-emerald-500/20 bg-emerald-500 dark:bg-transparent dark:border dark:border-emerald-400"
                         @click="toggleWorkPage"
                         >
@@ -30,7 +29,7 @@
                     <div v-if="showNotification()" class="formcarry-block">
                         <div :class="`formcarry-message-block fc-${icon} active`">
                             <div class="fc-message-icon"></div>
-                            <div class="fc-message-content">{{ errorMessage() }}</div>
+                            <div class="fc-message-content text-emerald-500">{{ errorMessage() }}</div>
                             <div class="fc-message-close" @click="resetStates()"></div>
                         </div>
                     </div>
@@ -92,7 +91,7 @@ export default {
 
         const showNotification = () => submitted.value || error.value;
         const icon = () => error.value ? 'error' : 'success';
-        const errorMessage = () => error.value ? error.value : "Thanks for reaching out!, we'll get back to you soon.";
+        const errorMessage = () => error.value ? error.value : "Thanks for reaching out!, I'll get back to you soon.";
 
         return {
             name,
