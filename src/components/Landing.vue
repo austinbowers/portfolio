@@ -9,7 +9,7 @@
             <img
               class="rounded-full border-2 animated-circle-outline w-32 relative z-20"
               alt="me"
-              src="../assets/self-image.jpg"
+              src="/assets/self-image.jpg"
             />
           </div>
         </div>
