@@ -20,16 +20,16 @@
           class="dark:text-gray-200 text-gray-900 text-center max-w-screen-lg relative z-30"
         >
           <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10">
-            <ImageSquare url="src/assets/photos/Back.jpg"></ImageSquare>
-            <ImageSquare url="src/assets/photos/Back2.jpg"></ImageSquare>
-            <ImageSquare url="src/assets/photos/BHBWavy.png"></ImageSquare>
-            <ImageSquare url="src/assets/photos/BHB_Funky_Letters.png"></ImageSquare>
-            <ImageSquare url="src/assets/photos/planetrotating.gif"></ImageSquare>
-            <ImageSquare url="src/assets/photos/THE_ONE.png"></ImageSquare>
-            <ImageSquare url="src/assets/photos/jimwall.jpg"></ImageSquare>
-            <ImageSquare url="src/assets/photos/Lennon.jpg"></ImageSquare>
-            <ImageSquare url="src/assets/photos/JerryGarcia_Small.jpg"></ImageSquare>
-            <ImageSquare url="src/assets/photos/FrankSinatra.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/Back.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/Back2.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/BHBWavy.png"></ImageSquare>
+            <ImageSquare url="src/assets/BHB_Funky_Letters.png"></ImageSquare>
+            <ImageSquare url="src/assets/planetrotating.gif"></ImageSquare>
+            <ImageSquare url="src/assets/THE_ONE.png"></ImageSquare>
+            <ImageSquare url="src/assets/jimwall.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/Lennon.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/JerryGarcia_Small.jpg"></ImageSquare>
+            <ImageSquare url="src/assets/FrankSinatra.jpg"></ImageSquare>
           </div>
         </div>
         <ContactForm></ContactForm>
